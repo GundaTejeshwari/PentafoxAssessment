@@ -1,0 +1,6 @@
+**2. The Recursive Tree**
+
+const results = users.reduce((acc, curr) => {
+  acc[curr.id]=curr;
+  return acc;
+  },{});
