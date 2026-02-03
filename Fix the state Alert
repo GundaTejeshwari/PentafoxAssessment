@@ -1,0 +1,15 @@
+function App(){
+   const[darkMode, setDarkMode]=useState(false);
+   useEffect(() =>{ const timer = setTimeout(() =>{
+       alert(Dark Mode is : $ {darkMode});
+       }, 5000);
+       return () => clearTimeout(timer);
+       },[darkMode]);
+       return (
+       <div>
+        <input type="checkbox" checked={darkMode} onChange={e => setDarkMode(e.target.checked)}
+        />
+        </div>
+      );
+    }
+    
