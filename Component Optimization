@@ -1,0 +1,19 @@
+**9. Component Optimization**
+
+const BigList = 
+React.memo(({item }) => {
+return items.map(item => <div key = {item.id}> {item.name}</div>);
+});
+
+function App(){
+  const[count,setCount] = useState(0);
+  const items = useMemo{() => [{id:1,name:"A"}],
+  []
+  );
+return (
+<div> 
+<button onClick = {() => setCount(c => c+1)}> Count: {count} </button>
+  <BigList items = {items} />
+</div>
+);
+}
