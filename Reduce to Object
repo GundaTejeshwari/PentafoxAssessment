@@ -1,0 +1,8 @@
+**3.Reduce to object**
+
+const handleClick = () =>{
+  setDarkMode(prev => {
+    alert(!prev);
+    return !prev;
+  });
+};
