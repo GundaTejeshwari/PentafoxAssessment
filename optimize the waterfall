@@ -1,0 +1,6 @@
+
+async function getUsers(userIds){
+  const requests = userIds.map(id => fetch(/users/${id}).then(res => res.join())
+  );
+  return Promise.all(requests);
+  }
